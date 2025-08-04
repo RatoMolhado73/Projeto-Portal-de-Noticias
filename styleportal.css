@@ -1,0 +1,338 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.buttonmenu {
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    background-color: rgb(226, 109, 13);
+    margin-left: -1800px;
+    margin-top: 14px;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+}
+
+h1, h3, h4, h6 {
+    font-family: sans-serif;
+    margin: 10px 0;
+}
+
+.header {
+  background-color: #1e88e5; /* azul das laterais */
+  display: flex;
+  justify-content: right;
+}
+
+ 
+.logotopo {
+    color: white;
+    width: 100px;
+    margin-left: -900px;
+}
+
+
+.header-inner {
+  background-color: orange;
+  width: 100%;
+  max-width: 1580px;
+  border-radius: 150px 0px 150px 0px; /* bordas arredondadas - ESQ - DIREITO */
+  padding: 25px;
+  text-align: center;
+  color: white;
+}
+
+.lado1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+
+  border-left: 1px solid transparent;
+  border-right: 580px solid transparent;
+  border-bottom: 70px solid #1e88e5;
+}
+
+.footer-content {
+  display: flex; /* para ativar flexbox */
+  background-color: orange;
+  align-items: center; /* Alinha verticalmente no centro */
+  justify-content: flex-start; /* Alinha a MARGEM esquerda, por isso nao utilizei left */
+  gap: 35px; /* EspaÃ§o entre imagem e texto */
+}
+
+.logofooter {
+  width: 120px;
+}
+
+.sec-noti {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2%;
+  align-items: center;
+  margin-left: 5%;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+.sec-noti img{
+    width: 100%;
+    transition: all 0.3s ease;
+    border-radius: 10px; 
+}
+.sec-noti img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 1); 
+}
+.texto-sec-noti {
+  font-family: "Roboto Flex", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.texto-sec-noti:hover {
+  color: orange;
+}
+.margen { 
+    margin: 2% 5%; 
+    background-color: #f4f4f4; 
+} 
+.container { 
+    display: flex; 
+    gap: 3%; 
+    padding: 1%; 
+    flex-wrap: wrap; 
+} 
+
+.destaque {
+   width: 70%; 
+   border-radius: 20px;
+    overflow: hidden; 
+    word-break: break-word; 
+    position: relative; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+.destaque:hover {
+  transform:  translateY(-5px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1); 
+}
+
+.destaque img {
+     width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+}
+.texto-destaque {
+    font-family: "Roboto Flex", sans-serif;
+    max-width: 90%; 
+    position: absolute; 
+    color: rgb(211, 112, 0); 
+    left: 5%; 
+    bottom: 40%; 
+    font-size: clamp(1.2rem, 3vw, 3rem); 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); 
+}
+.texto-descrição {
+    font-family: "Roboto Flex", sans-serif;
+    max-width: 90%; 
+    position: absolute; 
+    color: white; 
+    left: 5%; 
+    bottom: 10%; 
+    font-size: clamp(1rem, 2vw, 1.5rem); 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+}  
+
+.destaque:hover .fade-overlay {
+    height: 50%;
+    opacity: 1;
+}
+
+.top { 
+    width: 25%; 
+    padding: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 5%; 
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+
+.item{
+  display: flex; 
+  align-items: center; 
+  gap: 20px; 
+  background-color: rgb(226, 109, 13);
+  padding: 19px; 
+  overflow: hidden; 
+  border-radius: 6px; 
+}
+} 
+.item-lista { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    background-color: rgb(226, 109, 13);
+    padding: 19px; 
+    overflow: hidden; 
+   border-radius: 6px; 
+   cursor: pointer; 
+   transition: all 0.3s ease; 
+} 
+.item-lista:hover { 
+    transform:  translateY(-5px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1); 
+} 
+.item-lista img { 
+    width: 90px; 
+    height: 80px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    border-radius: 15px; 
+} 
+.item-lista p, h3 {
+    font-family: "Roboto Flex", sans-serif; 
+    font-size: 14px; 
+    color: whitesmoke; 
+    margin: 0; 
+}
+@media (min-width: 1400px) {
+  .container {
+    flex-direction: row;
+  }
+  .logotopo {
+    margin-left: -900px;
+  }
+}
+
+/* Notebooks e desktops médios: entre 1025px e 1399px */
+@media (min-width: 1025px) and (max-width: 1399px) {
+  .buttonmenu {
+    margin-left: -700px;
+  }
+
+  .logotopo {
+    margin-left: -500px;
+  }
+
+  .texto-destaque {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+  }
+
+  .texto-descrição {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+  }
+}
+
+/* Tablets: entre 768px e 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .destaque,
+  .top {
+    width: 100%;
+  }
+
+  .buttonmenu {
+    margin-left: -200px;
+    width: 70px;
+    font-size: 12px;
+  }
+
+  .logotopo {
+    margin-left: 0;
+    width: 80px;
+  }
+
+  .sec-noti {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5%;
+  }
+
+  .texto-destaque {
+    font-size: 1.5rem;
+  }
+
+  .texto-descrição {
+    font-size: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* Celulares: até 767px */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .destaque,
+  .top {
+    width: 100%;
+  }
+
+  .buttonmenu {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 60px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .logotopo {
+    margin-left: 0;
+    width: 70px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec-noti {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .texto-destaque {
+    font-size: 1.2rem;
+    bottom: 30%;
+  }
+
+  .texto-descrição {
+    font-size: 0.9rem;
+  }
+
+  .item-lista img {
+    width: 70px;
+    height: 60px;
+  }
+
+  .item-lista p, .item-lista h3 {
+    font-size: 12px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logofooter {
+    width: 90px;
+  }
+}
